@@ -17,7 +17,7 @@ namespace Charp_analysis_sample
     {
         public string tokenUrl = "https://token.beyondverbal.com/token";
         public string apiKey = "Enter API Key";
-        public string startUrl = "https://apiv3.beyondverbal.com/v3/recording/";
+        public string startUrl = "https://apiv3.beyondverbal.com/v1/recording/";
 
     }
     public class AnalysisClient
@@ -47,8 +47,7 @@ namespace Charp_analysis_sample
             analysisUrl = options.startUrl + recordingId;
 
             Debug.WriteLine("End Init recID:" + recordingId);
-            //Analyze(analysisUrl, File.OpenRead(options.postFilePath), recordingId, token).Wait();
-
+            
 
 
         }

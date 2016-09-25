@@ -19,11 +19,12 @@ namespace Charp_analysis_sample
         }
         public static async Task Run()
         {
+            Options op = new Options();
             AnalysisClient client = new AnalysisClient();
             JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings() { Formatting = Formatting.Indented };
             client.init();
 
-            using (Stream stream = File.Open(@"Wav File Path", FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite))
+            using (Stream stream = File.Open(@"C:\YouFile.wav", FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite))
             {
                 await client.Analyze(stream, (result) =>
                 {

@@ -1,37 +1,38 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using Quobject.SocketIoClientDotNet.Client;
 
-namespace CsharpBasicSampleCode
+namespace CSharp__analysis
 {
     public class Options
     {
         public string tokenUrl = "https://token.beyondverbal.com/token";
         public string apiKey = "Enter API Key";
-        public string startUrl = "https://apiv3.beyondverbal.com/v1/recording/";
+        public string startUrl = "https://testapiv3.beyondverbal.com/v3/recording/";
         public string postFilePath = @"C:\YouFile.wav";
-
     }
-   
     class Program
     {
         static void Main(string[] args)
         {
+            //Analysis sample via websocket
             Options options = new Options();
+            var socket = IO.Socket("http://analysis.beyondverbal.com");
+            
            
             var requestData = "apiKey=" + options.apiKey + "&grant_type=client_credentials";
             //auth
             var token = authRequest(options.tokenUrl, Encoding.UTF8.GetBytes(requestData));
 
             //start
-          
             var startResponseString = CreateWebRequest(options.startUrl + "start", Encoding.UTF8.GetBytes("{ dataFormat: { type: \"WAV\" } }"), token);
-            
+
             var startResponseObj = JsonConvert.DeserializeObject<dynamic>(startResponseString);
             if (startResponseObj.status != "success")
             {
@@ -39,24 +40,38 @@ namespace CsharpBasicSampleCode
                 return;
             }
             var recordingId = startResponseObj.recordingId.Value;
-
-            ////analysis
-            string analysisUrl = options.startUrl + recordingId;
-            var bytes = File.ReadAllBytes(options.postFilePath);
-            var analysisResponseString = CreateWebRequest(analysisUrl, bytes, token);
-            Console.WriteLine(analysisResponseString);
-
-            dynamic parsedJson = JsonConvert.DeserializeObject(analysisResponseString);
-            string jstring = JsonConvert.SerializeObject(parsedJson, Formatting.Indented);
-            string n = string.Format("log-{0:yyyy-MM-dd_HH-mm-ss-fff}.txt", DateTime.Now);
-            File.WriteAllText(n, jstring);
            
+            socket.Emit("join", recordingId);
+            Console.WriteLine("Connected to socket:"+recordingId);
+           
+            socket.On("update", data => {
+
+                // get the json data from the server message
+                //var jobject = data as JToken;
+                Console.WriteLine("\r\n");
+                Console.WriteLine(data);
+                
+            });
+           
+            //analysis
+            string analysisUrl = options.startUrl + recordingId;
+            var bytes = System.IO.File.ReadAllBytes(options.postFilePath);
+            var analysisResponseString = CreateWebRequest(analysisUrl, bytes, token);
+            
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine("\r\nAnalysis on finish request:");
+            Console.WriteLine(analysisResponseString);
+            // disconnect from the server
+            socket.Close();
+            
             Console.WriteLine("-------------------");
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
+            
+            
+           
         }
-
-
+        
         private static string authRequest(string url, byte[] data)
         {
             JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings() { Formatting = Formatting.Indented };
@@ -76,10 +91,10 @@ namespace CsharpBasicSampleCode
             {
                 requestStream.Write(data, 0, data.Length);
             }
-            
+
             using (var response = request.GetResponse() as HttpWebResponse)
             using (var responseStream = response.GetResponseStream())
-            using (var streamReader = new StreamReader(responseStream, Encoding.UTF8))
+            using (var streamReader = new System.IO.StreamReader(responseStream, Encoding.UTF8))
             {
                 var res = streamReader.ReadToEnd();
                 dynamic responceContent = JsonConvert.DeserializeObject(res, jsonSerializerSettings);
@@ -112,12 +127,10 @@ namespace CsharpBasicSampleCode
 
             using (var response = request.GetResponse() as HttpWebResponse)
             using (var responseStream = response.GetResponseStream())
-            using (var streamReader = new StreamReader(responseStream, Encoding.UTF8))
+            using (var streamReader = new System.IO.StreamReader(responseStream, Encoding.UTF8))
             {
                 return streamReader.ReadToEnd();
             }
         }
-
-
     }
 }

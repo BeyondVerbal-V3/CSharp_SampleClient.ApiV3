@@ -14,3 +14,14 @@ C:\Users\sagi\Desktop\Charp analysis sample\Charp analysis sample\Charp analysis
 C:\Users\sagi\Desktop\Charp analysis sample\Charp analysis sample\Charp analysis sample\bin\Debug\Newtonsoft.Json.dll
 C:\Users\sagi\Desktop\Charp analysis sample\Charp analysis sample\Charp analysis sample\bin\Debug\Newtonsoft.Json.xml
 C:\Users\sagi\Desktop\Charp analysis sample\Charp analysis sample\Charp analysis sample\obj\Debug\Charp analysis sample.csprojResolveAssemblyReference.cache
+C:\Software\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\bin\Debug\Charp analysis sample.exe.config
+C:\Software\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\obj\Debug\Charp analysis sample.exe
+C:\Software\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\obj\Debug\Charp analysis sample.pdb
+C:\Software\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\bin\Debug\Charp analysis sample.exe
+C:\Software\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\bin\Debug\Charp analysis sample.pdb
+C:\Software\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\bin\Debug\Newtonsoft.Json.dll
+C:\Software\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\bin\Debug\Newtonsoft.Json.xml
+C:\Software\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\obj\Debug\Charp analysis sample.csprojResolveAssemblyReference.cache
+C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\bin\Debug\Charp analysis sample.exe.config
+C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\obj\Debug\Charp analysis sample.exe
+C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\obj\Debug\Charp analysis sample.pdb
