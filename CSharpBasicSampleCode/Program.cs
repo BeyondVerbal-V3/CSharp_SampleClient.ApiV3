@@ -29,7 +29,6 @@ namespace CsharpBasicSampleCode
             var token = authRequest(options.tokenUrl, Encoding.UTF8.GetBytes(requestData));
 
             //start
-          
             var startResponseString = CreateWebRequest(options.startUrl + "start", Encoding.UTF8.GetBytes("{ dataFormat: { type: \"WAV\" } }"), token);
             
             var startResponseObj = JsonConvert.DeserializeObject<dynamic>(startResponseString);

@@ -25,3 +25,8 @@ C:\Software\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sampl
 C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\bin\Debug\Charp analysis sample.exe.config
 C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\obj\Debug\Charp analysis sample.exe
 C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\obj\Debug\Charp analysis sample.pdb
+C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\bin\Debug\Charp analysis sample.exe
+C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\bin\Debug\Charp analysis sample.pdb
+C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\Charp analysis sample\Charp analysis sample\obj\Debug\Charp analysis sample.csprojResolveAssemblyReference.cache
