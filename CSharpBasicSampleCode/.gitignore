@@ -13,6 +13,8 @@
 x64/
 build/
 bld/
+bin/
+obj/
 [Bb]in/
 [Oo]bj/
 
