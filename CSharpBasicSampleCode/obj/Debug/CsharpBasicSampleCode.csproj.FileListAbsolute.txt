@@ -1,1 +1,8 @@
 C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\CSharpBasicSampleCode\bin\Debug\CharpBasicSampleCode.exe.config
+C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\CSharpBasicSampleCode\bin\Debug\CharpBasicSampleCode.exe
+C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\CSharpBasicSampleCode\bin\Debug\CharpBasicSampleCode.pdb
+C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\CSharpBasicSampleCode\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\CSharpBasicSampleCode\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\CSharpBasicSampleCode\obj\Debug\CsharpBasicSampleCode.csprojResolveAssemblyReference.cache
+C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\CSharpBasicSampleCode\obj\Debug\CharpBasicSampleCode.exe
+C:\Users\ariel\Documents\Visual Studio 2015\Projects\CSharp_SampleClient_ApiV3\CSharp_SampleClient_ApiV3\CSharpBasicSampleCode\obj\Debug\CharpBasicSampleCode.pdb
