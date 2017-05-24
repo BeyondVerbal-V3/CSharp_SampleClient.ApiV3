@@ -14,7 +14,7 @@ namespace CSharp__analysis
     {
         public string tokenUrl = "https://token.beyondverbal.com/token";
         public string apiKey = "Enter API Key";
-        public string startUrl = "https://testapiv3.beyondverbal.com/v3/recording/";
+        public string startUrl = "https://apiv3.beyondverbal.com/v3/recording/";
         public string postFilePath = @"C:\YouFile.wav";
     }
     class Program
